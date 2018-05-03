@@ -1,0 +1,9 @@
+[stlucia]
+host: host
+account: account
+reporting: reportingapplication
+framework: framework
+user: userId
+password: passowrd
+reportingSource: something.war
+frameworkSource: something.war

@@ -1,0 +1,15 @@
+#!/bin/env python
+
+import argparse
+import sys
+import scripts
+
+parser = argparse.ArgumentParser(description='Jarvis assistant',prog='Jarvis')
+
+parser.add_argument('script',choices=['lms','others'])
+parser.add_argument('commands',nargs='*')
+
+args = parser.parse_args()
+script = args.script
+
+scripts.parse(script,sys.argv[1:])
